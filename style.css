@@ -1,0 +1,1306 @@
+/* $Id: style.css,v 1.1 2009/05/15 07:28:05 agileware Exp $ */
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #F7F5F3;
+}
+
+.Main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.PageBackgroundGlare
+{
+	position: absolute;
+	width: 100%;
+	height: 208px;
+	left: 0;
+	top: 0;
+}
+
+.PageBackgroundGlareImage
+{
+	background-image: url('images/Page-BgGlare.png');
+	background-repeat: no-repeat;
+	height: 208px;
+	width: 637px;
+	margin: 0;
+}
+
+html:first-child .PageBackgroundGlare
+{
+	border: 1px solid transparent; /* Opera fix */
+}
+
+.PageBackgroundSimpleGradient
+{
+	position: absolute;
+	background-image: url('images/Page-BgSimpleGradient.jpg');
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 250px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+
+form
+{
+	padding:0 !important;
+	margin:0 !important;
+}
+
+table.position
+{
+	position: relative;
+	width: 100%;
+	table-layout: fixed;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 900px;
+	min-width:1px;
+	min-height:1px;
+}
+
+.Sheet-body
+{
+	position: relative;
+	z-index:1;
+	padding: 10px;
+}
+
+.Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #FFFFFF;
+}
+
+.Sheet
+{
+	margin-top: -10px !important;
+}
+
+.PageBackgroundSimpleGradient, .PageBackgroundGradient, .PageBackgroundGlare
+{
+	min-width:900px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 880px;
+	height: 100px;
+}
+/* end Header */
+
+/* begin Logo */
+.logo
+{
+	display : block;
+	position: absolute;
+/*	left: 10px;  */
+	top: 10px;
+}
+/* end Logo */
+
+/* begin ContentLayout */
+.contentLayout
+{
+	position: relative;
+	margin-bottom: 0px;
+	width: 880px;
+}
+/* end ContentLayout */
+
+/* begin Box, Block */
+.Block
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	min-width:15px;
+	min-height:15px;
+}
+
+.Block-body
+{
+	position: relative;
+	z-index:1;
+	padding: 7px;
+	overflow: auto;
+}
+
+.Block-tr, .Block-tl, .Block-br, .Block-bl, .Block-tc, .Block-bc,.Block-cr, .Block-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.Block-tr, .Block-tl, .Block-br, .Block-bl
+{
+	width: 14px;
+	height: 14px;
+	background-image: url('images/Block-s.png');
+}
+
+.Block-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 7px, 7px, auto);
+}
+
+.Block-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 7px, 7px);
+}
+
+.Block-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(7px, 7px, auto, auto);
+}
+
+.Block-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(7px, auto, auto, 7px);
+}
+
+.Block-tc, .Block-bc
+{
+	left: 7px;
+	right: 7px;
+	height: 14px;
+	background-image: url('images/Block-h.png');
+}
+
+.Block-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 7px, auto);
+}
+
+.Block-bc
+{
+	bottom: 0;
+	clip: rect(7px, auto, auto, auto);
+}
+
+.Block-cr, .Block-cl
+{
+	top: 7px;
+	bottom: 7px;
+	width: 14px;
+	background-image: url('images/Block-v.png');
+}
+
+.Block-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 7px);
+}
+
+.Block-cl
+{
+	left:0;
+	clip: rect(auto, 7px, auto, auto);
+}
+
+.Block-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 7px;
+	left: 7px;
+	right: 7px;
+	bottom: 7px;
+	background-color: #E9E5DD;
+}
+
+.Block
+{
+	margin: 7px;
+}
+
+/* end Box, Block */
+
+/* begin BlockHeader */
+.BlockHeader
+{
+	position:relative;
+	z-index:0;
+	height: 30px;
+	padding: 0 7px;
+	margin-bottom: 7px;
+}
+
+.BlockHeader .t
+{
+	height: 30px;
+	color: #000000;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+	white-space : nowrap;
+	padding: 0 7px;
+	line-height: 30px;
+}
+
+.BlockHeader .l, .BlockHeader .r
+{
+	display:block;
+	position:absolute;
+	z-index:-1;
+	height: 30px;
+	background-image: url('images/BlockHeader.png');
+}
+
+.BlockHeader .l
+{
+	left:0;
+	right:6px;
+}
+
+.BlockHeader .r
+{ 
+	width:900px;
+	right:0;
+	clip: rect(auto, auto, auto, 894px);
+}
+
+.header-tag-icon
+{
+	display:inline-block;
+	background-position:left top;
+	background-image: url('images/BlockHeaderIcon.png');
+	padding:0 0 0 22px;
+	background-repeat: no-repeat;
+	min-height: 15px;
+	margin: 0 0 0 5px;
+}
+
+
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.BlockContent
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	min-width:1px;
+	min-height:1px;
+}
+
+.BlockContent-body
+{
+	position: relative;
+	z-index:1;
+	padding: 0 8px 0 8px;
+	color:#534937;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+}
+
+.BlockContent-body a:hover, .BlockContent-body a.hover
+{
+	color: #ff8030;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+.BlockContent-body ul
+{
+	list-style-type: none;
+	color: #3D3629;
+	margin:0;
+	padding:0;
+}
+
+.BlockContent-body li
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+}
+
+.BlockContent-body ul li
+{
+	padding:0px 0 0px 14px;
+	background-image: url('images/BlockContentBullets.png');
+	background-repeat:no-repeat;
+	margin:0.5em 0 0.5em 0;
+	line-height:1.2em;
+}
+
+/* end Box, BlockContent */
+
+/* begin Box, Post */
+.Post
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	min-width:1px;
+	min-height:1px;
+}
+
+.Post-body
+{
+	position: relative;
+	z-index:1;
+	padding: 10px;
+}
+
+.Post
+{
+	margin: 10px;
+}
+
+/* Start images */
+a img
+{
+	border: 0;
+}
+
+.metadata-icons img
+{
+	border: none;
+	vertical-align: middle;
+	margin:2px;
+}
+/* Finish images */
+
+/* Start tables */
+
+.article table, table.article
+{
+	border-collapse: collapse;
+	margin: 1px;
+	width:auto;
+}
+
+.article table, table.article .article tr, .article th, .article td
+{
+	background-color:Transparent;
+}
+
+.article th, .article td
+{
+	padding: 5px;
+	border: solid 1px #B6A991;
+	vertical-align: top;
+	text-align:left;
+}
+
+.article th
+{
+	text-align:center;
+	vertical-align:middle;
+	padding: 7px;
+}
+
+.article caption {
+	margin: 0 1em 1em 1em;
+}
+
+.article table {
+	margin: 1em;
+}
+
+/* Discounts Page */
+.page-node-14 tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+/* Finish tables */
+/* end Box, Post */
+
+/* begin PostHeaderIcon */
+.PostHeaderIcon-wrapper
+{
+	text-decoration:none;
+	margin: 0.2em 0;
+	padding: 0;
+	font-weight:normal;
+	font-style:normal;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-variant:normal;
+	text-decoration:none;
+	font-variant:normal;
+	text-transform:none;
+	text-align:left;
+	text-indent:0;
+	line-height:inherit;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 24px;
+	color: #9A360E;
+}
+
+.PostHeaderIcon-wrapper, .PostHeaderIcon-wrapper a, .PostHeaderIcon-wrapper a:link, .PostHeaderIcon-wrapper a:visited, .PostHeaderIcon-wrapper a:hover
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 24px;
+}
+
+/* end PostHeaderIcon */
+
+/* begin PostHeader */
+.PostHeader a:hover, .PostHeader a.hovered
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-align: left;
+  color: #ff8030;
+}
+/* end PostHeader */
+
+/* begin PostIcons */
+.PostHeaderIcons
+{
+	padding:1px;
+}
+
+.PostHeaderIcons, .PostHeaderIcons a, .PostHeaderIcons a:link, .PostHeaderIcons a:visited, .PostHeaderIcons a:hover
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	color: #794F2F;
+}
+
+.PostHeaderIcons a, .PostHeaderIcons a:link, .PostHeaderIcons a:visited, .PostHeaderIcons a:hover
+{
+	margin:0;
+}
+
+.PostHeaderIcons a:hover, .PostHeaderIcons a.hover
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-style: italic;
+	font-weight: normal;
+	color: #ff8030;
+}
+/* end PostIcons */
+
+/* begin PostContent */
+/* Content Text Font & Color (Default) */
+body
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 13px;
+  color: #4D4433;
+}
+
+.PostContent
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: #4D4433;
+}
+
+
+/* Start Content link style */
+a
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-decoration: none;
+  color: #A3390F;
+}
+
+/* :hover - adds special style to an element when you mouse over it. */
+a:hover, a.hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-decoration: none; 
+  color: #ff8030;
+}
+
+/* Finish Content link style */
+
+/* Resert some headings default style & links default style for links in headings*/
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+{
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 32px;
+  color: #815432;
+}
+
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 24px;
+  color: #815432;
+}
+
+h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 19px;
+  color: #8D7C5E;
+}
+
+h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 16px;
+  color: #655943;
+}
+
+h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 13px;
+  color: #655943;
+}
+
+h6, h6 a, h6 a:link, h6 a:visited, h6 a:hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 11px;
+  color: #655943;
+}
+/* Finish Content headings Fonts & Colors  */
+
+p {
+  line-height: 1.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+/* end PostContent */
+
+/* begin PostBullets */
+/* Start Content list */
+ol, ul
+{
+	color: #4D4433;
+	margin:1em 0 1em 0.5em;
+	padding:0;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+}
+
+li ol, li ul
+{
+	margin:0.5em 0 0.5em 2em;
+	padding:0;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+ol
+{
+	list-style-position:inside;
+}
+
+.Post li
+{
+	padding:0px 0 0px 14px;
+	line-height:1.2em;
+}
+
+.Post ol li, .Post ul ol li
+{
+	background: none;
+	padding-left:0;
+}
+
+.Post ul li, .Post ol ul li 
+{
+	background-image: url('images/PostBullets.png');
+	background-repeat:no-repeat;
+	padding-left:24px;
+}
+
+/* Finish Content list */
+/* end PostBullets */
+
+/* Tabs */
+
+.tabs ul.primary li {
+	background-image: none;
+	padding: 0;
+	}
+	
+.tabs ul {
+	border: none;
+}
+
+.tabs ul li a, .tabs ul li a.active {
+	padding: 5px 10px 5px 10px;
+	background-color: #FEB070;
+	border: #BBBBBB solid 1px;
+	border-radius: 8px;
+	color: #000000;
+}
+
+.tabs ul li a:hover, .tabs ul li a.active:hover {
+	background-color: #F08048;
+	border: #808080 solid 1px;
+	color: #000000;
+}
+/* Tabs*/
+
+/* begin PostMetadata */
+.PostMetadataFooter {
+	padding:1px;
+	margin: 10px 0;
+	background-color: #F9D2C2;
+	border-color: #E0C4AE;
+	border-style: solid;
+	border-width: 1px;
+}
+/* end PostMetadata */
+
+/* begin PostIcons */
+.PostFooterIcons
+{
+	padding:1px;
+	overflow: auto;
+}
+
+.PostFooterIcons, .PostFooterIcons a, .PostFooterIcons a:link, .PostFooterIcons a:visited, .PostFooterIcons a:hover
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	color: #462E1B;
+}
+
+.PostFooterIcons a, .PostFooterIcons a:link, .PostFooterIcons a:visited, .PostFooterIcons a:hover
+{
+	margin:0;
+}
+
+.PostFooterIcons a:hover, .PostFooterIcons a.hover
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	color: #ff8030;
+}
+/* end PostIcons */
+
+/* begin Footer */
+#footer
+{
+	text-align: center;
+	height: 40px;
+	width: 100%;
+	background-color: #F9D2C2;
+	border: #E0C4AE solid 1px;
+	margin: 5px 0 0 0;
+}
+/* end Footer */
+
+/* begin LayoutCell */
+.contentLayout .content
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+	overflow: hidden;
+	width: 660px;
+}
+.contentLayout .content-wide
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+	overflow: hidden;
+	width: 880px;
+}
+/* end LayoutCell */
+
+/* begin LayoutCell */
+.contentLayout .sidebar-second
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+	overflow: hidden;
+	width: 219px;
+}
+/* end LayoutCell */
+
+
+
+/*
+** HTML elements
+*/
+
+ul li 
+{
+	text-align: left;
+	background-image: none;
+	display: block;
+}
+
+li.expanded, li.leaf, li.collapsed
+{
+	list-style-type: none;
+	list-style-image: none;
+	background-image: none;
+}
+
+.tabs, .links, .service-links img, service-links img
+{
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.tabs li, .links li
+{
+	float: left;
+	display: block;
+	padding: 0 0 0 1em;
+}
+
+ul.primary {
+/*	border: solid 1px #E0C4AE;
+	background-color: #F9D2C2;   */
+	overflow: auto;
+	padding: 5px;
+}
+
+#user-login-form 
+{
+	text-align: left;
+}
+
+#user-login-form ul li
+{
+	background-image: none;
+	padding-left:0;
+}
+
+fieldset
+{
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid ;
+	width: 95%;
+}
+
+fieldset legend 
+{
+	/* Fix disappearing legend in FFox */
+	display: block;
+}
+
+.form-text, .form-textarea
+{
+	width: 95%;
+	text-align: left;
+}
+
+.tags
+{
+	float: left;
+}
+
+.messages
+{
+	padding: 5px;
+	margin: 5px 0;
+}
+
+.status
+{
+	border: 1px solid #090;
+	background:#C9FBC8;
+	margin: 5px 0;
+}
+
+.messages li
+{
+	margin: 5px 0;
+}
+
+tr.even, tr.odd
+{
+	background-color: transparent;
+}
+
+.read_more
+{
+	margin: 0px;
+	text-align:right;
+	font-style: italic;
+}
+
+.sticky-table H2
+{
+	font-size: 10px;
+}
+
+.comment span.new-text {
+  color: #FF0000;
+  font-size: 60%;
+  font-weight: normal;
+}
+
+/*****************  Coding added by AMS *******************/
+.logo-print {
+	display: none;
+}
+
+/* Begin common Node content */
+.PostContent .field {
+  margin-top: 6px;
+}
+.PostContent .field .field-label, 
+.PostContent .field .field-label-inline, 
+.PostContent .field .field-label-inline-first,
+.PostContent .field-name-field-eventdate .field-items  {
+  font-size: 1.2em;
+  color: #9A360E;
+  margin: 6px 0 3px 0;
+  font-weight: normal;
+  clear: both;
+}
+.PostContent .field-items {
+  margin-left: 10px;
+}
+.PostContent .field-name-field-groupref  .field-items {
+  margin-left: 0px;
+}
+.PostContent .field-name-upload .field-label {
+    color: #8D7C5E;
+    font-size: 19px;
+	margin-left: 10px;
+}
+.PostContent .field-name-upload a {
+	font-weight: bold;
+}
+.PostContent .field-name-upload .field-item {
+	margin: 5px 20px;
+}
+
+/* Begin Custom Node Types */
+/* Begin Group (and common bits of Event etc.) */
+.PostHeaderIcon-wrapper img {
+  margin:0 20px 0 20px;
+  vertical-align:middle;
+}
+.PostHeaderIcon-wrapper div {
+  vertical-align:middle;
+  display:inline;
+}
+.PostContent .field-name-field-groupref {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.node-type-group h2.PostHeaderIcon-wrapper, 
+.node-type-event h2.PostHeaderIcon-wrapper, 
+.node-type-gallery h2.PostHeaderIcon-wrapper, 
+.node-type-story h2.PostHeaderIcon-wrapper,
+.page-node-add-group h2.PostHeaderIcon-wrapper, 
+.page-node-add-event h2.PostHeaderIcon-wrapper, 
+.page-node-add-gallery h2.PostHeaderIcon-wrapper, 
+.page-node-add-story h2.PostHeaderIcon-wrapper  {
+	display: none;
+}
+body.page-node-delete  h2.PostHeaderIcon-wrapper {
+	display: block;
+}
+.node-type-group .field-name-field-groupicon a,
+.page-node-add-group .field-name-field-groupicon a,
+.view-refgroupicon .views-field-field-groupicon a {
+	float: left;
+	padding: 0 20px 10px 0;
+}
+.node-type-group .field-name-field-groupicon h2,
+.page-node-add-group .field-name-field-groupicon h2,
+.view-refgroupicon .views-field-title h2 {
+	padding: 10px;
+}
+.field-name-body,
+.field-name-field-groupref {
+	clear: both;
+}
+
+/* Begin Gallery */
+.field-name-field-galleryimages img {
+  margin: 10px;
+}
+.field-name-field-galleryimages .field-item  {
+  float: left;
+}
+
+/* Begin common Block content */
+.BlockContent .views-field-title {
+  margin: 3px 0 0 0;
+}
+.BlockContent .views-field-title-1 {
+  margin: 6px 0 0 0;
+  font-weight: bold;
+}
+
+/* Begin Custom Block Types */
+.Post {
+  clear: both; 
+}
+
+.content-header  .view-randomimage  .views-row {
+  float: left;
+}
+.content-header  .view-randomimage   img {
+  margin: 0 14px 0 14px;
+}
+.content-header .view-randomimage {
+  min-height: 135px;
+}
+
+.view-groupevents .views-field-field-eventdate-value {
+  margin-left: 5px;
+}
+.view-grouptypes .views-field-name {
+  font-size:1.4em;
+  margin-top: 5px;
+}
+ 
+.region-content .Block-tr, .region-content .Block-tl, .region-content .Block-br, 
+.region-content .Block-bl, .region-content .Block-tc, .region-content .Block-bc,
+.region-content .Block-cr, .region-content .Block-cl, .region-content .Block-cc {
+	position: static;
+	z-index: auto;
+	width: auto;
+	height: auto;
+	background-image: none;
+	top: auto;
+	left: auto;
+	bottom: auto;
+	right: auto;
+	clip: auto;
+	background-color: transparent;
+}
+.lalg-print-button {
+	float: right;
+} 
+.quicktabs-style-excel .item-list ul li {
+	background-image: none;
+}
+
+/* Begin Calendar */
+.view-eventcalendar .feed-icon,
+.view-eventcalendar .views-field-term-node-tid {
+  display: none;
+}
+
+.Main .Sheet .Post .calendar-calendar td .inner div.calendar div, 
+.Main .Sheet .Post .calendar-calendar td .inner div.calendar div a {
+    background: transparent;
+}
+
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-general {
+  border: 1px solid #ffb000;
+  background-color: #ffd373;
+}
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-arts {
+  border: 1px solid  blue;
+  background-color: #a0a0ff;
+}
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-social {
+  border: 1px solid  #ee20ee;
+  background-color: #fbb0fb;
+}
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-sports {
+  border: 1px solid  red;
+  background-color: #ffb2b2;
+}
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-languages {
+  border: 1px solid  #30ff30;
+  background-color: #a0ffa0;
+}
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-walking {
+  border: 1px solid  #ffff00;
+  background-color: #ffff80;
+}
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-other {
+  border: 1px solid  #FF8040;
+  background-color: #ffa080;
+}
+.Main .Sheet .Post .calendar-calendar td .view-item-eventcalendar .group-type-associated {
+  border: 1px solid  #6000b0;
+  background-color: #cba4ec;
+}
+/* Fix layout problem */
+.calendar-calendar div.date-nav  {
+  width: 99%;
+  clear:both;
+}
+.calendar-calendar .links li {
+  width: 50px;
+}
+
+/* Begin Custom Views */
+/* All Groups and Groups By Type  */
+.view-allgroups td img {
+	margin:0 10px 0 20px;
+}
+.PostContent .view-allgroups h3 {
+  margin:15px 0 10px 0;
+}
+.view-allgroups table {
+  width: 100%;
+}
+.view-allgroups td {
+  width: 33%;
+}
+.view-allgroups .views-field-field-groupicon {
+  float: left; 
+  min-width: 80px;
+}
+.view-allgroups .views-field-field-groupicon img {
+  max-width: 75px;
+  min-height: 30px;
+}
+.view-allgroups  .views-field-title   {
+  padding-top: 5px;
+}
+.view-groupsbytype .views-field-field-groupicon {
+  float: left; 
+  min-width: 70px;
+}
+.view-groupsbytype  .views-field-title   {
+  font-size: 1.5em;
+  padding-top: 5px;
+  float: left;
+  margin-left: 20px;
+}
+.view-groupsbytype  .views-field-view-node
+{
+	margin: 0px;
+	float:right;
+	font-style: italic;
+}
+.view-groupsbytype .views-row-odd,
+.view-groupsbytype .views-row-even  {
+  margin:10px 0 10px 0;
+  border-bottom: solid 1px #888888;
+  padding-bottom: 20px;
+}
+.view-groupsbytype .views-field-body {
+  clear: both;
+}
+
+/* Group Galleries */
+.view-groupgalleries .views-field-title {
+  font-weight: bold;
+}
+.view-groupgalleries .views-field-field-galleryimages {
+  float: left;
+}
+.view-groupgalleries img {
+  margin:0 10px 10px 0;
+}
+.view-groupgalleries .views-row {
+  clear: both;
+}
+.view-groupgalleries  .views-field-view-node
+{
+	margin: 0px;
+	float:right;
+	font-style: italic;
+}
+
+/* Group All Contacts */
+.view-allgroupcontacts td {
+  padding: 3px 10px 3px 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* Group Stories */
+.view-groupstories  .views-field-view-node
+{
+	margin: 0px;
+	float:right;
+	font-style: italic;
+	padding-top: 5px;
+}
+.view-groupstories .views-row {
+  clear: both;
+}
+.view-groupstories .views-field-title {
+  font-weight: bold;
+  padding-top: 5px;
+}
+.view-groupstoriesmarker , .view-groupgalleriesmarker {
+  display: none;
+}
+
+/* Group refgroupicon */
+.view-refgroupicon .views-field-title a:hover {
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-align: left;
+  color: #ff8030;
+}
+
+/* Group frontpage */
+.view-frontpage .Post {
+	margin-bottom: 30px;
+}
+.view-frontpage .node-group .field-name-field-groupicon h2,
+.view-frontpage .node-group .Post-inner .PostMetadataFooter:first-of-type,
+.view-frontpage .node-event .PostHeaderIcon-wrapper,
+.view-frontpage .node-story .PostHeaderIcon-wrapper,
+.view-frontpage .node-gallery .PostHeaderIcon-wrapper {
+	display: none;
+}
+
+/* BEF Search Results */
+.view-bef-search-view .views-field-title {
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+.view-bef-search-view .views-label {
+	font-weight: bold;
+}
+.view-bef-search-view .views-field-field-eventdate div.field-content,
+.view-bef-search-view .views-field-field-groupref div.field-content {
+	display: inline;
+}
+.view-bef-search-view .views-field-body {
+ 	margin-left:40px;
+}
+.view-bef-search-view .views-field-view-node {
+	float: right;
+}
+/*BEF Search Block */
+.sidebar-second .BlockContent .views-widget-filter-secondary ~ div.views-submit-button input,
+.sidebar-second .BlockContent .views-widget-filter-secondary ~ div.views-reset-button input {
+	margin: 0 0 0 10px;
+}
+.sidebar-second .BlockContent .views-widget-filter-secondary fieldset {
+	margin: 0;
+	padding-top: 0;
+}
+.sidebar-second .BlockContent .views-widget-filter-secondary fieldset.collapsed {
+	padding: 0 1em 0 1em;
+}
+.sidebar-second .BlockContent .views-exposed-widgets {
+	margin-bottom:0.7em;
+}
+.sidebar-second .BlockContent .views-exposed-form .form-item .form-item label {
+	font-weight: normal;
+}
+.sidebar-second .BlockContent .form-item-field-eventdate-value-op {
+	display: none;
+	width: 100px;
+}
+.sidebar-second .BlockContent .bef-secondary-options .form-item-field-eventdate-value-value-date,
+.sidebar-second .BlockContent .bef-secondary-options .form-item-field-eventdate-value-value-date input {
+	width: 120px;
+}
+.sidebar-second .BlockContent .bef-secondary-options .form-item-field-eventdate-value-value,
+.sidebar-second .BlockContent .bef-secondary-options .bef-sortby > .form-item-sort-by,
+.sidebar-second .BlockContent .bef-secondary-options > .form-item {
+	margin-top: 10px;
+}
+.sidebar-second .BlockContent .bef-secondary-options .bef-sortorder {
+	display: none;
+}
+ 
+	
+	
+/*  Items added to get TinyMCE to look a bit more like the real thing */
+.mceItemTable {
+	float:none;
+	border-collapse: collapse;
+	margin: 1em;
+	width:auto;
+	}
+.mceItemTable th, .mceItemTable td {
+	padding: 5px;
+	border: solid 1px #B6A991;
+	vertical-align: top;
+	text-align:left;
+	font-size: 13px;
+	background-color:Transparent;
+	font-family: Arial,Helvetica,Sans-Serif;
+	color: #4D4433;
+}
+.mceItemTable th {
+	text-align:center;
+	vertical-align:middle;
+	padding: 7px;
+}
+.mceItemTable caption {
+	margin: 0 1em 1em 1em;
+	font-size: 13px;
+	background-color:Transparent;
+	font-family: Arial,Helvetica,Sans-Serif;
+	color: #4D4433;
+}
+
+.mceContentBody ul li, .mceContentBody ol ul li  {
+	background-image: url('images/PostBullets.png');
+	background-repeat:no-repeat;
+	padding-left:24px;
+}
+
+/***********  Correct CKEditor layout to look more like the actual pages.  ********/
+.cke_editable p{
+	line-height: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/******************  Additions for CiviCRM prototype  **********************/
+.page-civicrm-contribute #Main .crm-not-you-message a {
+	display: none;
+}

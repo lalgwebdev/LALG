@@ -1,0 +1,490 @@
+/* $Id: style.css,v 1.1 2009/05/15 07:28:05 agileware Exp $ */
+
+/* begin Menu */
+/* menu structure */
+
+.artmenu a, .artmenu a:link, .artmenu a:visited, .artmenu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.artmenu, .artmenu ul
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.artmenu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 100;
+	background:none;
+}
+
+.artmenu li:hover
+{
+	z-index: 100;
+	white-space: normal;
+}
+
+.artmenu li li
+{
+	float: none;
+}
+
+.artmenu ul
+{
+	visibility: hidden;
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	background:none;
+}
+
+.artmenu li:hover>ul
+{
+	visibility: visible;
+	top: 100%;
+}
+
+.artmenu li li:hover>ul
+{
+	top: 0;
+	left: 100%;
+}
+
+.artmenu:after, .artmenu ul:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.artmenu, .artmenu ul
+{
+	min-height: 0;
+}
+
+.artmenu ul
+{
+	background-image: url(images/spacer.gif);
+	padding: 10px 30px 30px 30px;
+	margin: -10px 0 0 -30px;
+}
+
+.artmenu ul ul
+{
+	padding: 30px 30px 30px 10px;
+	margin: -30px 0 0 -10px;
+}
+
+/* menu structure */
+
+.artmenu
+{
+	padding: 3px 6px 3px 6px;
+}
+
+.nav
+{
+	position: relative;
+	height: 36px;
+	z-index: 100;
+	margin-bottom: 0;
+}
+
+.nav .l, .nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 36px;
+	background-image: url('images/nav.png');
+}
+
+.nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.nav .r
+{
+	right: 0;
+	width: 880px;
+	clip: rect(auto, auto, auto, 880px);
+}
+
+/* end Menu */
+
+/* begin MenuItem */
+.artmenu ul li
+{
+	clear: both;
+}
+
+.artmenu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 30px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.artmenu a .r, .artmenu a .l
+{
+	position:absolute;
+	display: block;
+	height: 90px;
+	background-image: url('images/MenuItem.png');
+}
+
+.artmenu a .l
+{
+	left:0;
+	right:4px;
+}
+
+.artmenu a .r
+{
+	width:408px;
+	right:0;
+	clip: rect(auto, auto, auto, 404px);
+}
+
+.artmenu a .t 
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+	color: #25180E;
+	padding: 0 12px;
+	margin: 0 4px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.artmenu a:hover .l, .artmenu a:hover .r
+{
+	top:-30px;
+}
+
+.artmenu li:hover>a .l, .artmenu li:hover>a .r
+{
+	top:-30px;
+}
+
+.artmenu li:hover a .l, .artmenu li:hover a .r
+{
+	top:-30px;
+}
+.artmenu a:hover .t
+{
+	color: #373125;
+}
+
+.artmenu li:hover a .t
+{
+	color: #373125;
+}
+
+.artmenu li:hover>a .t
+{
+	color: #373125;
+}
+
+.artmenu a.active .l, .artmenu a.active .r
+{
+	top: -60px;
+}
+
+.artmenu a.active .t
+{
+	color: #E2C9B6;
+}
+
+/* end MenuItem */
+
+/* begin MenuSeparator */
+.nav .separator
+{
+	display: block;
+	width: 1px;
+	height: 30px;
+	background-image: url('images/MenuSeparator.png');
+}
+
+/* end MenuSeparator */
+
+/* begin MenuSubItem */
+.artmenu ul a
+{
+	display:block;
+	text-align: center;
+	white-space: nowrap;
+	height: 20px;
+	width: 180px;
+	overflow:hidden;
+	line-height: 20px;
+	margin-right: auto;
+	background-image: url('images/subitem-bg.png');
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-width: 0px;
+	border-style: solid;
+}
+
+.nav ul.artmenu ul span, .nav ul.artmenu ul span span
+{
+	display: inline;
+	float: none;
+	margin: inherit;
+	padding: inherit;
+	background-image: none;
+	text-align: inherit;
+	text-decoration: inherit;
+}
+
+.artmenu ul a, .artmenu ul a:link, .artmenu ul a:visited, .artmenu ul a:hover, .artmenu ul a:active, .nav ul.artmenu ul span, .nav ul.artmenu ul span span
+{
+	text-align: left;
+	text-indent: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	color: #21160D;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+}
+
+.artmenu ul ul a
+{
+	margin-left: auto;
+}
+
+.artmenu ul li a:hover
+{
+	color: #000000;
+	background-position: 0 -20px;
+}
+
+.artmenu ul li:hover>a
+{
+	color: #000000;
+	background-position: 0 -20px;
+}
+
+.nav .artmenu ul li a:hover span, .nav .artmenu ul li a:hover span span
+{
+	color: #000000;
+}
+
+.nav .artmenu ul li:hover>a span, .nav .artmenu ul li:hover>a span span
+{
+	color: #000000;
+}
+
+/* end MenuSubItem */
+
+/************************* begin All Groups Menu *************************/
+/* Adapted from artmenu above */
+/* menu structure */
+
+.toolbar, .BlockContent-toolbar, .view-allgroupsmenu {
+	position: relative;
+	z-index: 50;
+}
+
+.toolbar {
+	background-image: url('images/toolbar.png');
+	background-repeat: repeat-x;
+	margin: 3px 0 0 0;
+	padding: 1px;
+}
+
+.allgroupsmenu a, .allgroupsmenu a:link, .allgroupsmenu a:visited, .allgroupsmenu a:hover, .allgroupsmenu a:active
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+	z-index: 50;
+	color: #000000;
+}
+
+.allgroupsmenu, .allgroupsmenu ul
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.allgroupsmenu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 50;
+	background:none;
+}
+
+.allgroupsmenu li:hover
+{
+	white-space: normal;
+}
+
+.allgroupsmenu li li
+{
+	float: none;
+	background: #c8beac;
+}
+
+.allgroupsmenu li li:hover
+{
+	background: #c8beac;
+}
+
+.allgroupsmenu ul 
+{
+	visibility: hidden;
+	position: absolute;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	background: none;
+	max-height: 432px;
+	width: 265px;
+	overflow: auto;
+}
+
+.allgroupsmenu li:hover>ul
+{
+	visibility: visible;
+	top: 100%;
+}
+
+.allgroupsmenu li li:hover>ul
+{
+	top: 0;
+	left: 100%;
+}
+
+.allgroupsmenu:after, .allgroupsmenu ul:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.allgroupsmenu, .allgroupsmenu ul
+{
+	min-height: 0;
+}
+
+.allgroupsmenu ul ul
+{
+	padding: 30px 30px 30px 10px;
+	margin: -30px 0 0 -10px;
+}
+
+.allgroupsmenu
+{
+	padding: 0 6px 0 6px;
+}
+
+/* menu structure */
+
+/* begin MenuItem */
+.allgroupsmenu ul li
+{
+	clear: both;
+}
+
+.allgroupsmenu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 24px;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 5px 9px 0 9px;
+}
+
+.allgroupsmenu>li 
+{
+	background-image: url('images/toolbar.png');
+	background-repeat: repeat-x;
+	}
+
+.allgroupsmenu  li:hover 
+{
+	background-image: url('images/toolbar-background.png');
+	background-repeat: repeat-x;
+}
+
+.allgroupsmenu li:hover a {
+	color: #ffffff;
+}
+
+/* end MenuItem */
+
+/* begin MenuSubItem */
+.allgroupsmenu ul a
+{
+	display:block;
+	white-space: nowrap;
+	width: 250px;
+	overflow:hidden;
+}
+
+.allgroupsmenu ul a, .allgroupsmenu ul a:link, .allgroupsmenu ul a:visited, .allgroupsmenu ul a:hover, .allgroupsmenu ul a:active
+{
+	text-align: left;
+	text-indent: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	height: 24px;
+	color: #000000;
+	background-color: #c8beac; 
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+	margin: 0;
+}
+
+.allgroupsmenu ul a:hover {
+	color: #ffffff;
+}
+
+.allgroupsmenu ul ul a
+{
+	margin-left: auto;
+}
+
+/* end MenuSubItem */
+/* end Menu */

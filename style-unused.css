@@ -1,0 +1,304 @@
+/* $Id: style.css,v 1.1 2009/05/15 07:28:05 agileware Exp $ */
+/*  In original theme, but not used at present */
+
+/* begin PostQuote */
+/* Start blockquote */
+blockquote p
+{
+	color:#373125;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+blockquote
+{
+	border:solid 1px #F29773; 
+	margin:10px 10px 10px 50px;
+	padding:5px 5px 5px 41px;
+	background-color:#F8C8B4;
+	background-image:url('images/PostQuote.png');
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+
+/* Finish blockuote */
+/* end PostQuote */
+
+
+#forum .links li
+{
+	float: none;
+	clear: both;
+}
+
+#forum table
+{
+	width: auto;
+	margin-top: 15px;
+}
+
+#forum td.container
+{
+	padding-top: 15px;
+	border-left: none;
+	border-right: none;
+}
+
+#forum td.active
+{
+	background-color: transparent;
+}
+
+#forum td.forum, #forum td.topics, #forum td.posts, #forum td.last-reply
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#forum td.container
+{
+	font-weight: bold;
+}
+
+#forum td.active
+{
+	background-color: transparent;
+}
+
+.forum-topic-navigation
+{
+	border-top: 0px transparent;
+	border-bottom: 0px transparent;
+}
+
+.forum-topic-navigation .topic-previous
+{
+	text-align: left;
+	float: left;
+}
+
+.forum-topic-navigation .topic-next
+{
+	text-align: right;
+	float: right;
+}
+
+/* begin Button */
+a.Button,
+button.Button,
+.tabs ul.primary li a
+{
+	display:inline-block;
+	width: auto;
+	outline:none;
+	border:none;
+	background:none;
+	line-height:33px;
+	margin:0;
+	padding:0;
+	overflow: visible;
+	cursor: default;
+	text-decoration: none !important;
+	z-index:0;
+	color: #A3390F;
+}
+
+a.Button .btn,
+button.Button .btn
+{
+	display:block;
+	position:relative;
+	float:left;
+	height: 33px;
+	overflow:hidden;
+	white-space: nowrap;
+	width: auto;
+	color: #51351F;
+}
+
+a.Button .btn .t,
+button.Button .btn .t
+{
+	display:block;
+	height: 33px;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+	white-space: nowrap;
+	text-align: left;
+	padding: 0 16px;
+	line-height: 33px;
+	text-decoration: none !important;
+}
+
+input, select
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 13px;
+}
+
+a.Button .hover,
+a.Button:hover,
+button.Button .hover,
+button.Button:hover,
+.tabs ul.primary li a:hover
+{
+	color: #541D08;
+	text-decoration: none !important;
+}
+
+a.Button .active,
+button.Button .active
+{
+	color: #F7F5F3;
+}
+
+a.Button .btn .l,
+a.Button .btn .r,
+button.Button .btn .l,
+button.Button .btn .r
+{
+	display:block;
+	position:absolute;
+	z-index:-1;
+	height: 99px;
+	background-image: url('images/Button.png');
+}
+
+a.Button .btn .l,
+button.Button .btn .l
+{
+	left:0;
+	right:10px;
+}
+
+a.Button .btn .r,
+button.Button .btn .r
+{
+	width:409px;
+	right:0;
+	clip: rect(auto, auto, auto, 399px);
+}
+
+a.Button .btn.hover .l,
+a.Button .btn.hover .r,
+a.Button .btn:hover .l,
+a.Button .btn:hover .r,
+button.Button .btn.hover .l,
+button.Button .btn.hover .r,
+button.Button .btn:hover .l,
+button.Button .btn:hover .r
+{
+	top: -33px;
+}
+
+a.Button .btn.active .l,
+a.Button .btn.active .r,
+button.Button .btn.active .l,
+button.Button .btn.active .r
+{
+	top: -66px;
+}
+
+/* end Button */
+
+/* Footer */
+.Footer .Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.Footer .Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url('images/Footer.png');
+	width: 880px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+.rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url('images/rssIcon.png');
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 30px;
+	width: 30px;
+}
+
+.Footer .Footer-text p
+{
+	margin: 0;
+}
+
+.Footer .Footer-text
+{
+	display:inline-block;
+	color:#40392B;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+.Footer .Footer-text a:hover
+{
+	color: #BB4111;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+/* end Footer */
+
+/* begin PageFooter */
+.page-footer, .page-footer a, .page-footer a:link, .page-footer a:visited, .page-footer a:hover
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	color:#936039;
+}
+
+.page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#9F8E6F;
+}
+/* end PageFooter */
+
+/******************************  Additions for Shiny_Upload  *************************/
+/**
+ * Theme Uploads
+ */
+.file-uploads .file-file {
+	margin: 10px 20px;
+}
+
+.file-file img {
+	vertical-align:middle;
+	margin-right: 10px;
+}
+
+.file-file .file-link {
+	font-weight: bold;;
+}
+
+.file-file .file-metadata {
+	margin-left: 46px;
+	font-size: .8em;
+}
+
+.file-file .file-metadata .file-size {
+	font-weight: bold;
+}
+

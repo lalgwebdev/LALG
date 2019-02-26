@@ -1,0 +1,21 @@
+/* Additional Print Formatting */
+/* Omit Menu, Toolbar and Sidebar, page background etc.*/
+.nav, .toolbar, .content-header, .tabs, .PostMetadataFooter, #sidebar-first, #sidebar-second, #footer,
+.PageBackgroundGlare, .PageBackgroundSimpleGradient, .lalg-print-button {
+  display: none;
+}
+/* Use full page */
+.contentLayout .content {
+  width: 100%;
+}
+/* Format the printed header */
+.logo {
+	display:none;
+}
+.logo-print {
+	display: block !important;
+	font-size: 48px;
+}
+.Header {
+	height:50px;
+}

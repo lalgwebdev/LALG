@@ -1,0 +1,26 @@
+; $Id: earthen.info,v 1.1 2009/05/15 07:28:05 agileware Exp $
+; Modified from "Earthen" by AMS
+name = LALG
+description = Custom theme for LALG
+screenshot = screenshot.png
+
+core = 7.x
+engine = phptemplate
+
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+regions[navigation] = Menu
+regions[footer] = Footer
+regions[header] = Header
+regions[toolbar] = Toolbar
+regions[help] = Help
+
+stylesheets[all][] = style.css
+stylesheets[all][] = style-menus.css
+stylesheets[print][] = print.css
+scripts[] = script.js
+scripts[] = script-lalg.js
+
+
+
